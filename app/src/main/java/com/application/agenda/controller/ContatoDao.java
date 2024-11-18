@@ -6,7 +6,6 @@ import com.google.gson.Gson;
 
 public class ContatoDao {
 
-    // Método para serializar o objeto contato para Json
     public String toJson(Contato contato){
         Gson gson = new Gson();
         String contatoJson = gson.toJson(contato);
