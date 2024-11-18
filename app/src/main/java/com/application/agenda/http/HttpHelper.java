@@ -19,9 +19,10 @@ public class HttpHelper {
         StrictMode.setThreadPolicy(policy);
     }
 
-    //public static final String URL_BASE = "http://192.168.15.3:3000"; // IP do Ubuntu
-    public static final String URL_BASE = "http://10.0.2.2:3000"; // IP do Ubuntu
-    //public static final String URL_BASE = "http://192.168.187.231:3000";
+    public static final String HTTP = "http://";
+    public static final String PORTA = ":3000";
+    public static final String HOST = ""; // Insira seu IP da Máquina aqui dentro das aspas
+    public static final String URL_BASE = HTTP + HOST + PORTA;
 
     public String get(String url){
         String responseString = "";
